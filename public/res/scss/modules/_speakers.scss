@@ -1,0 +1,108 @@
+#speakers{
+    padding-bottom: 20px;
+    .section-title{
+        font-size: 36px;
+        color: #fff;
+        font-family: "Lato";
+        font-weight: 300;
+        display: block;
+        margin: 60px 0 75px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.speaker{
+    border-bottom: 1px solid #434343;
+    margin-bottom: 20px;
+    &.last{
+        border-bottom: none;
+    }
+    figure{
+        width: 180px;
+        height: 180px;
+        padding: 10px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .speaker-infos{
+        width: 765px;
+        padding: 10px;
+        h1{
+            display: block;
+            margin-bottom: 10px;
+            a{
+                font-family: "Lato";
+                font-weight: 500;
+                color: #fff;
+                font-size: 30px;
+                text-decoration: none;
+                line-height: 30px;
+            }
+        }
+        .empresa{
+            display: block;
+            a{
+                color: #898989;
+                font-family: "Arial",sans-serif;
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+        .speaker-about{
+            color: #666;
+            font-family: "Lato",sans-serif;
+            text-align: left;
+            display: block;
+            margin: 10px 0 0;
+            font-size: 13px;
+            line-height: 17px;
+        }
+        h2{
+            color: #0088cc;
+            font-size: 20px;
+            font-family: "Lato";
+            font-weight: 300;
+            padding: 15px 0 10px;
+            display: block;
+        }
+        .speaker-talk-desc{
+            color: #898989;
+            font-family: "Lato",sans-serif;
+            text-align: left;
+            display: block;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .speaker .speaker-infos{
+        width: 555px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .speaker figure{
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .speaker .speaker-infos{
+        width: 500px;
+    }
+    .speaker .speaker-infos{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .speaker .speaker-infos{
+        width: auto;
+    }
+    #speakers .section-title{
+        font-size: 26px;
+    }
+}

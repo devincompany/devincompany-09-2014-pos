@@ -1,0 +1,36 @@
+#apoios{
+    overflow: hidden;
+    background-color: #EFF0F2;
+    text-align: center;
+    padding: 80px 0;
+    .wrapper{
+        overflow: hidden;
+    }
+    h1{
+        color: rgba(0, 0, 0, 0.7);
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: center;
+        margin: 0 35px 50px;
+        font-size: 36px;
+        display: block;
+        text-transform: uppercase;
+    }
+    .apoios-list{
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        li{
+            margin:5px;
+            display: inline-block;
+            width: 90px;
+        }
+        a{
+            display: block;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#localizacao{
+    background-color: #EFF0F2;
+    text-align: center;
+    border-top: 1px solid #e7e9ea;
+    .legend{
+        color: rgba(0, 0, 0, 0.7);
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: center;
+        padding: 50px 35px 40px;
+    }
+    h1{
+        font-size: 36px;
+        margin-bottom: 50px;
+        display: block;
+        text-transform: uppercase;
+    }
+    h2{
+
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 25px;
+        display: block;
+    }
+    h4{
+
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 25px;
+        display: block;
+    }
+    #map{
+        height: 425px;
+    }
+}

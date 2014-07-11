@@ -1,0 +1,20 @@
+{
+  "name": "devincompany022014",
+  "version": "0.0.1",
+  "description": "Dev in Company - 02/2014",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-compass": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-imageoptim": "~1.4.1"
+  }
+}

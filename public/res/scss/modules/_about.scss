@@ -1,0 +1,28 @@
+main{
+    background-color: #EFF0F2;
+    text-align: center;
+    padding: 70px 35px 80px;
+    h1{
+
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 32px;
+        color: rgba(0,0,0,0.7);
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: "Tahoma", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(0,0,0,0.7);
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main{
+        padding: 50px 35px;
+    }
+}

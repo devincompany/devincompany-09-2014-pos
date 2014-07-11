@@ -1,0 +1,194 @@
+// header{
+//     background-color: #efefef;
+//     .logo-header{
+//         position: absolute;
+//         left: 0;
+//         top: 10px;
+//         width: auto;
+//         height: 50px;
+//         cursor: pointer;
+//         img{
+//             height: 100%;
+//             width: auto;
+//         }
+//     }
+//     nav{
+//     }
+//     ul{
+//         text-align: center;
+//         display: block;
+//         padding: 15px 0;
+//     }
+//     li{
+//         font-family: "Lato";
+//         font-weight: 300;
+//         display: inline-block;
+//         margin: 0 12px;
+//         a{
+//             display: block;
+//             text-decoration: none;
+//             color: rgba(0,0,0,0.9);
+//             padding: 10px 0;
+//             border-bottom: 5px solid #efefef;
+//             @include  transition(border-bottom 300ms linear);
+//             &:hover{
+//                 border-bottom: 1px solid #ff7e5b;
+//             }
+//         }
+//     }
+// }
+
+header{
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+    .fotos-without-animation{
+        position: relative;
+        z-index: 5;
+        background-image: url("../../res/images/cover.jpg");
+        background-size: 100% auto;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        height: 500px;
+        opacity: 0.12;
+    }
+    .fotos{
+        position: relative;
+        z-index: 5;
+        background-image: url("../../res/images/cover.jpg");
+        background-size: 1800px 500px;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        width: 9000px;
+        height: 500px;
+        opacity: 0.12;
+
+        @include translate3d(0,0,0);
+        @include  transition(transform 300ms linear);
+
+        -webkit-animation: bgCover 1000s linear infinite;
+        -moz-animation: bgCover 1000s linear infinite;
+        -o-animation: bgCover 1000s linear infinite;
+        -ms-animation: bgCover 1000s linear infinite;
+        animation: bgCover 1000s linear infinite;
+
+    }
+    .infos{
+        top: 0;
+        z-index: 10;
+    }
+}
+
+.chamada-devincompany{
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    h1{
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 82px;
+        color: rgba(0,0,0,0.7);
+    }
+    h2{
+        font-family: "Tahoma", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(0,0,0,0.7);
+    }
+}
+
+.logo-header{
+    text-align: center;
+    width: 160px;
+    margin: 35px auto;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.countdown{
+    display: block;
+    text-align: center;
+    .time-bind{
+        display: inline-block;
+        width: 200px;
+        padding: 30px;
+        background: rgba(#f7f7f7, 0.95);
+        text-align: center;
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 90px;
+        margin: 0 5px;
+        color: #888;
+        span{
+            display: block;
+            margin: 5px 0;
+        }
+        .label{
+            font-size: 20px;
+        }
+    }
+}
+
+
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+
+@include keyframe("bgCover") {
+    0% {
+        @include translate3d(0,0,0);
+    }
+    50% {
+        @include translate3d(-4500px,0,0);
+    }
+    100% {
+        @include translate3d(0,0,0);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .countdown .time-bind{
+        width: 160px;
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .countdown .time-bind {
+        width: 110px;
+        font-size: 42px;
+    }
+    .countdown .time-bind .label{
+        font-size: 14px;
+    }
+    .chamada-devincompany{
+        margin: 26px auto;
+    }
+    .chamada-devincompany h2{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 640px) {
+    header .fotos{
+        height: 430px;
+    }
+    .countdown{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+@media screen and (max-width: 640px) {
+    .logo-header{
+        width: 280px;
+    }
+}

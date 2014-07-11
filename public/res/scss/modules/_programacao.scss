@@ -1,0 +1,104 @@
+#programacao{
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    h1{
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: center;
+        margin: 0 35px 50px;
+        font-size: 36px;
+        text-transform: uppercase;
+        display: block;
+    }
+    .programacao-list{
+        width: 500px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        border-top: 1px solid #e7e9ea;
+
+        &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 115%;
+            top: 0;
+            left: -16px;
+            right: 0;
+            margin: 0 auto;
+            background-color: #e7e9ea;
+        }
+
+        li{
+            display: block;
+            padding: 20px 0 0;
+            position: relative;
+            left: 69px;
+        }
+        time, h6{
+            font-family: "Lato";
+            font-weight: 300;
+            font-size: 21px;
+            color:  #a1a6ad;
+            line-height: 20px;
+        }
+        time{
+            display: inline-block;
+            margin:10px 20px;
+            position: relative;
+            text-align: right !important;
+            width: 60px;
+            &:after{
+                position: absolute;
+                display: block;
+                left: 74px;
+                width: 7px;
+                height: 7px;
+                margin-top: -11px;
+                content: "";
+                background-color: #fff;
+                border: 1px solid #0088cc;
+                z-index: 2;
+            }
+        }
+        h6{
+            width: 225px;
+            text-align: left !important; 
+            display: inline-block;
+            margin: 0 10px;
+            &.destaque{
+                color:  #3a3a47;
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    #programacao h1{
+        font-size: 30px;
+    }
+    #programacao .programacao-list{
+        width: 300px;
+    }
+    #programacao .programacao-list li{
+        left: 44px;
+    }
+    #programacao .programacao-list time, #programacao .programacao-list h6{
+        font-size: 17px;
+    }
+    #programacao .programacao-list h6{
+        width: 176px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #programacao .programacao-list li{
+        left: 21px;
+    }
+    #programacao .programacao-list time, #programacao .programacao-list h6{
+        font-size: 12px;
+    }
+    #programacao .programacao-list h6{
+        width: 130px;
+    }
+}
