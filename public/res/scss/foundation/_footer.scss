@@ -12,4 +12,7 @@ footer{
         color: #888;
         text-decoration: none;
     }
+    &.with-border{
+        border-top: 1px solid #ccc;
+    }
 }

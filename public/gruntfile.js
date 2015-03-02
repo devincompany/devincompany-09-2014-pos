@@ -31,24 +31,7 @@ module.exports = function( grunt ) {
           dest: 'res/images/'
         }]
       }
-    },
-    imageoptim: {
-      dynamic: {
-        options: {
-          jpegMini: true,
-          imageAlpha: true,
-          quitAfter: true
-        },
-        src: ['res/images/']
-      }
-    },
-    watch: {
-      js: {
-        options: {
-          livereload: true
-        },
-        files: "res/scripts/**/*.js",
-      },
+    },    watch: {
       sass: {
         options: {
           livereload: true
@@ -63,7 +46,7 @@ module.exports = function( grunt ) {
   // task registration
   grunt.registerTask('default', ['watch']);
 
-  grunt.registerTask('images', ['imagemin:dynamic', 'imageoptim:dynamic']);
+  grunt.registerTask('images', ['imagemin:dynamic']);
 
 };
 

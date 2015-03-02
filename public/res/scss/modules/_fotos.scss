@@ -1,0 +1,42 @@
+#fotos{
+        ul{
+            display: block;
+            li{
+                float: left;
+                display: block;
+                width: 25%;
+                height: 167px;
+                overflow: hidden;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+                position: relative;
+                top: -25%;
+            }
+        }
+}
+@media screen and (max-width: 960px) {
+    #fotos{
+        ul{
+            li{
+                width: 50%;
+            }
+            img{
+                top: -70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #fotos{
+        ul{
+            li{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
